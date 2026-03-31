@@ -1,0 +1,40 @@
+    .hidden{
+        display:none;
+    }
+    .container{
+        position: relative;
+        width: 100vw;
+        height: 80vh;
+        background-color: azure;
+    }
+    #button0{
+        position: absolute;
+        left: 30vw;
+        top: 20vw;
+    }
+        #button1{
+        position: absolute;
+        left: 20vw;
+        top: 20vw;
+    }
+        #button2{
+        position: absolute;
+        left: 40vw;
+        top: 20vw;
+    }
+  @media only screen and (max-width:600px){
+    .container{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #button0,
+    #button1,
+    #button2,
+    #textArea3{
+        position: static;
+        margin-top: 10px;
+    }
+  }

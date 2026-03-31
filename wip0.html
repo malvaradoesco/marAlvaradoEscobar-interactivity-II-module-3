@@ -4,14 +4,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Index</title>
-<link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file if you have one-->
+<link rel="stylesheet" href="stylesheetwip0.css"> <!-- Link to external CSS file if you have one-->
 </head>
 <body>
 <h1>This is the wip0 page</h1>
 <style></style>
-<script></script> 
-</body>
-</html>
+<script src="./javascript/script.wip0.js"></script> 
+
 
 
 <h1>
@@ -21,12 +20,30 @@
     Vera Pavlova<br>
 </h2>
 <p>
-He <mark>marked</mark class="hidden"> the page with a match
+He <mark class="hidden" id="mark1">marked</mark> the page with a match
 and fell asleep in mid-kiss,
-while I, a queen bee
+while I, a <mark class="hidden" id="mark2">queen bee</mark>
 in a disturbed hive, stay up and buzz:
 half a kingdom for a honey drop,
 half a lifetime for a tender word!
 His face, half turned.
 Half past midnight. Half past one.
 </p>
+
+<div class="container">
+<button type="button" onclick="openNextButton('mark1')" id="button0">Give it a mark</button>
+
+<button type="button" onclick="document.getElementById('mark2').classList.remove('hidden')" id="button1">Beyonce</button>
+
+<button type="button" onclick="document.getElementById('textArea3').classList.remove('hidden')" id="button2">Title</button>
+
+<textarea id="textArea3" name="future" rows="2" cols="50" class="hidden">
+    He marked the page with a match
+</textarea>
+</div>
+<style>
+
+</style>
+
+</body>
+</html>
