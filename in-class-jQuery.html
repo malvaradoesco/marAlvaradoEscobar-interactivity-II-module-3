@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>In-class jQuery</title>
+<link rel="stylesheet" href="stylesheetwip0.css"> <!-- Link to external CSS file if you have one-->
+
+</head>
+<body>
+
+<button id="myButton">
+    This is a button
+</button>
+
+<p id="message"></p>
+
+
+<script> const button = document.getElementById("myButton");
+
+button.addEventListener("click", function() {
+
+// change the message here
+
+document.getElementById("message").innerText = "CAPITAL 'Q', 'U', DOUBLE 'E', 'R'";
+
+
+// change the background color here
+
+document.body.style.backgroundColor = "purple"
+
+// add one more change here
+document.getElementById("message").style.color = "white"
+});
+
+</script>
