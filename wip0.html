@@ -9,7 +9,7 @@
 <body>
 <h1>This is the wip0 page</h1>
 <style></style>
-<script src="./javascript/script.wip0.js"></script> 
+<script src="script.wip0.js"></script> 
 
 
 
@@ -20,22 +20,22 @@
     Vera Pavlova<br>
 </h2>
 <p>
-He <mark class="hidden" id="mark1">marked</mark> the page with a match
-and fell asleep in mid-kiss,
-while I, a <mark class="hidden" id="mark2">queen bee</mark>
-in a disturbed hive, stay up and buzz:
-half a kingdom for a honey drop,
-half a lifetime for a tender word!
-His face, half turned.
-Half past midnight. Half past one.
+He <mark class="hidden" id="mark1">marked</mark> the page with a match<br>
+and fell asleep in mid-kiss,<br>
+while I, a <mark class="hidden" id="mark2">queen bee</mark><br>
+in a disturbed hive, stay up and buzz;<br>
+half a kingdom for a honey drop,<br>
+half a lifetime for a tender word!<br>
+His face, half turned.<br>
+Half past midnight. Half past one.<br>
 </p>
 
 <div class="container">
 <button type="button" onclick="openNextButton('mark1')" id="button0">Give it a mark</button>
 
-<button type="button" onclick="document.getElementById('mark2').classList.remove('hidden')" id="button1">Beyonce</button>
+<button type="button" onclick="openNextButton('mark2')" id="button1">Beyonce</button>
 
-<button type="button" onclick="document.getElementById('textArea3').classList.remove('hidden')" id="button2">Title</button>
+<button type="button" onclick="openNextButton('textArea3')" id="button2">Title</button>
 
 <textarea id="textArea3" name="future" rows="2" cols="50" class="hidden">
     He marked the page with a match

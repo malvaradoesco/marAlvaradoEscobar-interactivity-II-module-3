@@ -37,4 +37,10 @@
         position: static;
         margin-top: 10px;
     }
+    #button1{
+        margin-left: 40px;
+    }
+    #button2{
+        margin-left: 20px;
+    }
   }
