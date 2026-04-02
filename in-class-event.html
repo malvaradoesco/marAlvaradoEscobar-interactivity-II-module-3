@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>In-class Event</title>
+<link rel="stylesheet" href="stylesheetwip0.css"> <!-- Link to external CSS file if you have one-->
+
+</head>
+<body>
+
+
+<button id="thisButton">
+    click this Button
+</button>
+<p id="message"></p>
+
+<script>
+const button = document.getElementById('thisButton');
+button.addEventListener('click', function(){
+    document.getElementById('message').innerText = "the woke agneda";
+});
+
+</script>
+
+</body>
