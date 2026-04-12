@@ -20,3 +20,7 @@ function openNextButton(nextButtonId){
 
     brightness -= 50;
 }
+
+function ummAlert(){
+    alert("You don't have a say in this.");
+}
