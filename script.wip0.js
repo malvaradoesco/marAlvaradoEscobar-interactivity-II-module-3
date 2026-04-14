@@ -24,3 +24,15 @@ function openNextButton(nextButtonId){
 function ummAlert(){
     alert("You don't have a say in this.");
 }
+
+function popitup(url,windowName) {
+       newwindow=window.open(url,windowName,'height=200,width=150');
+       if (window.focus) {newwindow.focus()}
+       return false;
+     }
+
+function popitLarge(url,windowName) {
+       newwindow=window.open(url,windowName,'height=400,width=300');
+       if (window.focus) {newwindow.focus()}
+       return false;
+     }
