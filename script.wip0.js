@@ -36,3 +36,40 @@ function popitLarge(url,windowName) {
        if (window.focus) {newwindow.focus()}
        return false;
      }
+
+function newWindow() {
+ var winPop = new Array();
+winPop[winPop.length] = 
+window.open('top_right.html','window1','scrollbars=no,width=235,height=155,left=1000,top=200,screenX=1000,screenY=200');
+window.open('top_left.html','window2','scrollbars=no,width=235,height=155,left=325,top=200,screenX=325,screenY=200');
+window.open('bottom_left.html','window3','scrollbars=no,width=235,height=155,left=325,top=600,screenX=325,screenY=600');
+window.open('bottom_right.html','window4','scrollbars=no,width=235,height=155,left=1000,top=600,screenX=1000,screenY=600');
+window.open('center_page.html','window5','scrollbars=no,width=235,height=155,left=660,top=450,screenX=660,screenY=450');
+}
+
+onbeforeunload = function() {
+    for (var index = 0; index < winPop.length; ++index)
+        winPop[index].close();
+}
+
+function openPopup(howMany) {
+    var popups = [];
+
+    var temp;
+    for (var index = 0; index < howMany; ++index) {
+        popups.push(open('', '', 'height=500,width=500'));
+        popups[index].document.write('popup ' + (index + 1) + ' of ' + howMany + '<br/>this will close on parent window close');
+    }
+
+    closeFunc = function() {
+        for (var index = 0; index < popups.length; ++index)
+            popups[index].close();
+    };
+
+    if (addEventListener)
+        addEventListener('beforeunload', closeFunc, false);
+    else
+        attachEvent('onbeforeunload', closeFunc);
+}
+
+const princeLikes =['prince likes to.html','prince listens to.html']
