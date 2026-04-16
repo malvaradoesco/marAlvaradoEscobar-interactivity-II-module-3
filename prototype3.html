@@ -69,8 +69,24 @@
     pointer-events: all;
 }
 </style>
+
+
+
+<button data-modal-target="#modal">Open the Modal</button>
+    <div class="modal" id="modal">
+        <div class="modal-header">
+            <div class="title">Prince the Frog</div>
+            <button data-close-button class="close-button">&times;</button>
+        </div>
+        <div class="modal-body">
+            Prince loves to weave lots of things! Threads, yarn, stories, and even lies, Prince can do it all! They are also a student of the art of Black Work and White Work. Versalite and precise, Prince can find use in many different situtations and is incredibly selfreliant.
+        </div>
+    </div>
+
+<div id="overlay"></div>
+
 <script>
-    const openModalButtons =document.querySelectorAll('[data-modal-target]')
+const openModalButtons =document.querySelectorAll('[data-modal-target]')
 const closeModalButtons =document.querySelectorAll('[data-close-button]')
 const overlay = document.getElementById('overlay')
 
@@ -107,19 +123,5 @@ function closeModal(modal){
     overlay.classList.remove('active')
 }
 </script> 
-
-
-<button data-modal-target="#modal">Open the Modal</button>
-    <div class="modal" id="modal">
-        <div class="modal-header">
-            <div class="title">Prince the Frog</div>
-            <button data-close-button class="close-button">&times;</button>
-        </div>
-        <div class="modal-body">
-            Prince loves to weave lots of things! Threads, yarn, stories, and even lies, Prince can do it all! They are also a student of the art of Black Work and White Work. Versalite and precise, Prince can find use in many different situtations and is incredibly selfreliant.
-        </div>
-    </div>
-
-<div id="overlay"></div>
 
 </body>

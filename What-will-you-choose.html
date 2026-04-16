@@ -3,12 +3,16 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Index</title>
+<title>What Will You Choose?</title>
 <link rel="stylesheet" href="stylesheetwip0.css"> <!-- Link to external CSS file if you have one-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bytesized&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Jacquard+12&family=Pixelify+Sans:wght@400..700&family=Rosarivo:ital@0;1&family=Sue+Ellen+Francisco&display=swap" rel="stylesheet">
+
 </head>
 <body>
-<h1>This is the prototype 2 page</h1>
 <style></style>
+<script src="script.wip0.js"></script> 
 
 <div class="computer">
 <xmp>
@@ -45,36 +49,20 @@
  ═══════════════════════════════════════════════════════════════════════════════════════════════ 
 </xmp>
 <div class="container">
-  <div class="hidden" id="textArea3">
-     <button type="button" onclick="newWindow()" id="button0">Prince is...</button>
-     <button type="button" onclick="popitup('prince likes to.html')" id="button1">They like to...</button> 
-    <button type="button" onclick="popitLarge('prince listens to.html')" id="button2">They listen to...</button>
-    <a href="prototype3.html"><img src="images\p_and_v_elements-08.png" alt="heart?" style="width: 100px;"></a>
-  </div>
-</div>
-</div>
+    <h1>
+        Would you like to give up your heart?
+    </h1>
+    <button type="button" onclick="openNextButton('textArea3')" id="button0">Sure!</button>
+    <button type="button" onclick="ummAlert()" id="button1">Ummm...</button>
   
-<button type="button" onclick="openNextButton('frog')" id="button3">I have someone for you to meet</button>
-<div id="frog" class="hidden">
-<button type="button" onclick="openNextButton('textArea3')" id="button4">Let's get to know him a little better</button>
-<textarea name="future" rows="20" cols="50">
-    ,-----.                ,-----.    
-  ,'       `.            ,'       `.  
- / .------.  \  ------- /   _--,-<_ \ 
-(  ' '\:8.''               `  <.8''  )
- \     '''                       '  / 
-  `.  ,-.                     ,-.'''  
-    '/   \                   /   \    
-    (     ____           ____     )   
-     \   /   ''--. `',-'''   \   /    
-      `-'        '`./         `-'     
-       `.                     ,'      
-         '--.             _.-'        
-             `----------''                 
-    This is Prince
+
+</div>
+</div>
+<div id="textArea3" class="hidden">
+     <a href="gingersnap-intro.html"><img src="images\p_and_v_elements-08.png" alt="heart?" style="width: 100px;"></a>
+<textarea name="future" rows="10" cols="50">
+   GREAT! Please click on the "heart?".
 </textarea>
 </div>
-
-<script src="script.wip0.js"></script> 
 
 </body>
