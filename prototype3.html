@@ -9,7 +9,7 @@
 <title>modal</title>
 </head>
 <body>
-<h1>This is the prototype 3 page</h1>
+<h1></h1>
 <style>
 pixelify-sans-uniquifier {
   font-family: "Pixelify Sans", sans-serif;
@@ -32,17 +32,64 @@ html{
     background-color: rgb(251, 236, 190);
 }
 
+.computer{
+        position: absolute;
+        width: 50vw;
+        height: 60vh;
+        background-color: rgb(251, 236, 190);
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        margin: 10px;
+        padding: 10px;
+        top: 15vh;
+        left: 25vw;
+    }
+
+
+#button-modal{
+        position: absolute;
+        top: 25vw;
+        left: 40vw;
+        width: 100px;
+        font-family: "Pixelify Sans";
+        background-color: rgb(5, 70, 74);
+        color: rgb(251, 236, 190);;
+}
+#button-modal-1{
+        position: absolute;
+        top: 25vw;
+        left: 55vw;
+        width: 100px;
+        font-family: "Pixelify Sans";
+        background-color: rgb(5, 70, 74);
+        color: rgb(251, 236, 190);;
+}
+
     .modal{
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%) scale(0);
     transition: 200ms ease-in-out;
-    border: 1px solid cyan;
+    border: 1px solid rgb(12, 149, 170);
+    border-radius: 10px;
+    z-index: 10;
+    background-color: rgb(212, 229, 255);
+    width: 800px;
+    max-width: 80%;
+}
+    .modal-1{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0);
+    transition: 200ms ease-in-out;
+    border: 1px solid rgb(255, 156, 36);
     border-radius: 10px;
     z-index: 10;
     background-color: white;
-    width: 500px;
+    width: 800px;
     max-width: 80%;
 }
 
@@ -55,12 +102,27 @@ html{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1 px solid cyan;
+    border-bottom: 1 px solid rgb(12, 149, 170);
+}
+
+.modal-header-1{
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1 px solid rgb(255, 156, 36);
 }
 
 .modal-header .title{
     font-size: 1.25rem;
     font-weight: bold;
+    font-family: "Pixelify Sans";
+}
+.modal-header-1 .title{
+    font-size: 1.25rem;
+    font-weight: bold;
+    font-family: "Pixelify Sans";
+    
 }
 
 .modal-header .close-button{
@@ -72,7 +134,20 @@ html{
     font-weight: bold;
 }
 
+
+.modal-header-1 .close-button{
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
 .modal-body{
+    padding:10px 15px;
+}
+.modal-body-1{
     padding:10px 15px;
 }
 
@@ -94,45 +169,84 @@ html{
 }
 </style>
 
+<div class="computer">
+<xmp>
+  ═══════════════════════════════════════════════════════════════════════════════════════════════ 
+│XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX│
+│XXX ─────────────────────────────────────────────────────────────────────────────────────── XXX│
+│XXX│                                                                                      │ XXX│
+│XXX│                                                                                      │ XXX│
+│XXX│                                                                                      │ XXX│
+│XXX│                                                                                      │ XXX│
+│XXX│                                                                                      │ XXX│
+│XXX│                                                                                      │ XXX│
+│XXX│                                                                                      │ XXX│
+│XXX│                                                                                      │ XXX│
+│XXX│                                                                                      │ XXX│
+│XXX│                                                                                      │ XXX│
+│XXX│                                                                                      │ XXX│
+│XXX│                                                                                      │ XXX│
+│XXX│                                                                                      │ XXX│
+│XXX│                                                                                      │ XXX│
+│XXX│                                                                                      │ XXX│
+│XXX│                                                                                      │ XXX│
+│XXX│                                                                                      │ XXX│
+│XXX│                                                                                      │ XXX│
+│XXX│                                                                                     ─│ XXX│
+│XXX│                                                                                      │ XXX│
+│XXX│                                                                                      │ XXX│
+│XXX│                                                                                      │ XXX│
+│XXX│                                                                                      │ XXX│
+│XXX│                                                                                      │ XXX│
+│XXX│                                                                                      │ XXX│
+│XXX ─────────────────────────────────────────────────────────────────────────────────────── XXX│
+│XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX│
+ ═══════════════════════════════════════════════════════════════════════════════════════════════ 
+</xmp>
+</div>
 
-
-<button data-modal-target="#modal">Open the Modal</button>
-    <div class="modal" id="modal">
-        <div class="modal-header">
-            <div class="title">Prince the Frog</div>
+<button data-modal-target="#modal-1" id="button-modal-1">The Kitty Kingdom's Disapointment</button>
+    <div class="modal" id="modal-1">
+        <div class="modal-header-1">
+            <div class="title" style="color: rgb(74, 45, 5);;">Ginger the Snap</div>
             <button data-close-button class="close-button">&times;</button>
         </div>
-        <div class="modal-body">
-            <xmp>   
-XXXXXXXXXXXXXXXXXXXXXXXX                                                                      
-   ││││ │ │ ││ │ │ │││││ ││                                                                      
-   ││││ │ │ ││ │ │ │││││ ││                           ╔═════════════╗                            
-   ││││ │ │ ││ │ │ │││││ ││                       ╔═══╝             ╚═══╗                        
-   ││││ │ │ ││ │ │ │││││ ││                 ╔═════╣   --XXXXXXXXXXX--  ╔╝                        
-   ││││ │┌┘ ││ │ │ │││││ ││               ╔═╝     ╚══╗              ╔══╝                         
-══════╗ ││  ││ │ │ │││││ ││             ╔═╝          ╚══════════════╝                            
-   │││╚════════════╗││││ ││           ╔═╝                                                        
-   ││││ ││  ││ │ │ ╚══════════════════╝                                                          
-   ││││ ││  ││ │ │ │││││ ││                                                                      
-   │││└┐││  ││ │ │ │││││ ││                      ---------                ---------              
-   │││ │││  ││ │ │ │││││ ││                    --         --            --         --            
-   │││ │││  ││ │ │ ┌┘│││ ││            |      |             |/-------\ |             |           
-   │││ │││  ││┌┘ └┐│┌┘││┌┘│         \  \       --           /    \    \            --            
-   │││ ││└┐ │││   │││ │││ │          \  \        -----    //  /-/ \\   \      -----          | / 
-   │││ ││ │ │││   │││ │││ │           \------        /   /---/      \---\      \             -/ /
-   │││ ││ │ │││   │││ │││ │            |            /\                         /\            | / 
-   │││ ││ │ │││   │││ │││ │            |           |  \                       /  |          /    
-   │││ ││ │ │││   │││ │││ │            |           |   \                     /   |         /     
-   │││ ││ │ │││   │││ │││ │            |           |    \                   /    |        /      
-  ─┘││ ││ │ │││   │││ │││ └──          |            \    >                 <    /         /      
-     │       ││   │││  ││              |             \  /                   \  /         /       
-              │   │ │                  \              -/-                   |--          |       
-              │                         \                ----           ----             |       
-                                        \                    -//-------\\                |       
-                                         \                  ///         \\\              |       
-                                         \                 ///            \\\            |       
-                                          \              ///               \\\           /       </xmp>
-            Prince loves to weave lots of things! Threads, yarn, stories, and even lies, Prince can do it all! They are also a student of the art of Black Work and White Work. Versalite and precise, Prince can find use in many different situtations and is incredibly selfreliant.
+        <div class="modal-body" style="font-family: Pixelify Sans; color: rgb(74, 45, 5);">
+            <xmp></xmp>
+            The only heir to the Kitty Kingdom, Gingersnap is a pure-hearted fool. He's never in one place for very long (what a transient) and takes each day as it comes. He may not be the most talented individual, but he makes for it with his big heart and fluffy paws. His hobbies include: Eating sweets, practicing his white magic, yapping Prince's ear off, eating sweets (he's actully suprisingly skinny), and finding the best napping spots.
+        </div>
+    </div>
+
+<button data-modal-target="#modal" id="button-modal">The Amphibians' Pride</button>
+    <div class="modal" id="modal">
+        <div class="modal-header">
+            <div class="title" style="color: rgb(5, 70, 74);;">Prince the Frog</div>
+            <button data-close-button class="close-button">&times;</button>
+        </div>
+        <div class="modal-body" style="font-family: Pixelify Sans; color: rgb(5, 70, 74);">
+            <xmp>
+                        ║ /`. ,---.  ║ ╦═════╗ /`. ,---.  ║ 
+                        ║ `.`(  '' ) ║ ║  ═╗ ║ `.`(  '' ) ║ 
+                        ║     `---'  ║ ╚═══╝ ║     `---'  ║ 
+                        ╚════════╦═  ╚═══════╝   ╔════════╝ 
+                                 ║            │  ║          
+                        ╔══════╗ ║            │  ║ ╔══════╗ 
+                        ║╔═════╝ ║   .-. .-.  │  ║ ╚════╗ ║ 
+                        ║╚═══════╝   `o Y o' ═══ ╚══════╝ ║ 
+                        ╚═══════╗    |.---.|  |   ╔═══════╝ 
+                                ╣    `-----'  │   ║         
+                       ╔══════╗ ║ ────|   |──--   ║  ╔═════╗
+                       ║      ╚╗║ │    │-│        ║ ╔╝     ║
+                       ║      ╦╝║ |    │ │        ║ ╚╗     ║
+                       ║      ╚═╝      │ │        ╚══╝     ║
+                       ╚════════╦    --- ---       ╔═══════╝
+                       ╔════════╝                  ╚═══════╗
+                       ║  /`. ,---.  ║ ╔═════╗ /`. ,---.   ║
+                       ╚╗ `.`(  '' ) ║ ║  ═╗ ║ `.`(  '' ) ╔╝
+                       ╔╝     `---'  ║ ╚═══╝ ║     `---'  ╚╗
+                       ║             ╚═══════╝             ║
+            </xmp>
+            The eurdite and cold prince of Nenufar, Prince is practically a master of all. They have an affinity for threads, yarn, the needle, stories, and even lies. They are currently a student of Black Work and White Work. Versalite and precise, Prince can find use in many different situtations and is incredibly self-reliant. 
         </div>
     </div>
 
@@ -175,6 +289,7 @@ function closeModal(modal){
     modal.classList.remove('active')
     overlay.classList.remove('active')
 }
+
 </script> 
 
 </body>
