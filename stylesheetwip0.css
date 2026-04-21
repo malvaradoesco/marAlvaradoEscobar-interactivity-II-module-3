@@ -191,3 +191,11 @@ textarea{
     opacity: 1;
     pointer-events: all;
 }
+
+#prince1{
+    color: cyan;
+}
+
+#prince2{
+    color: orange;
+}
