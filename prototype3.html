@@ -167,6 +167,32 @@ html{
     opacity: 1;
     pointer-events: all;
 }
+
+
+    #button5{
+        position: absolute;
+        top: 49vh;
+        left: 40vw;
+        width: 100px;
+        height: 50px;
+        font-family: "Pixelify Sans";
+        background-color: rgb(243, 229, 193);
+        color: rgb(251, 236, 190);
+        outline: none;
+        border: none;
+    }
+        #button6{
+        position: absolute;
+        top: 49vh;
+        left: 55vw;
+        width: 100px;
+        height: 50px;
+        font-family: "Pixelify Sans";
+        background-color: rgb(243, 229, 193);
+        color: rgb(251, 236, 190);
+        outline: none;
+        border: none;
+        }
 </style>
 
 <div class="computer">
@@ -205,7 +231,7 @@ html{
 </xmp>
 </div>
 
-<button data-modal-target="#modal-1" id="button-modal-1">The Kitty Kingdom's Disapointment</button>
+<button data-modal-target="#modal-1" id="button-modal-1" style="z-index: 1;">The Kitty Kingdom's Disapointment</button>
     <div class="modal" id="modal-1">
         <div class="modal-header-1">
             <div class="title" style="color: rgb(74, 45, 5);;">Ginger the Snap</div>
@@ -217,7 +243,7 @@ html{
         </div>
     </div>
 
-<button data-modal-target="#modal" id="button-modal">The Amphibians' Pride</button>
+<button data-modal-target="#modal" id="button-modal" style="z-index: 1;">The Amphibians' Pride</button>
     <div class="modal" id="modal">
         <div class="modal-header">
             <div class="title" style="color: rgb(5, 70, 74);;">Prince the Frog</div>
@@ -250,12 +276,21 @@ html{
         </div>
     </div>
 
+<button type="button" onclick="popitup1('conversation3.html')" id="button5"></button>
+<button type="button" onclick="popitup1('')" id="button6"></button>
+
 <div id="overlay"></div>
 
 <script>
 const openModalButtons =document.querySelectorAll('[data-modal-target]')
 const closeModalButtons =document.querySelectorAll('[data-close-button]')
 const overlay = document.getElementById('overlay')
+
+function popitup1(url,windowName) {
+       newwindow=window.open(url,windowName,'height=200,width=150,screenX=1000,screenY=200');
+       if (window.focus) {newwindow.focus()}
+       return false;
+     }
 
 openModalButtons.forEach(button =>{
     button.addEventListener('click', ()=>{
